@@ -97,7 +97,7 @@ pub fn main() !void {
         defer handle.join();
 
         // Second thread
-        const handle2 = try std.Thread.spawn(.{}, thread_function, .{-4}); // that can't be right?
+        const handle2 = try std.Thread.spawn(.{}, thread_function, .{2}); // that can't be right?
         defer handle2.join();
 
         // Third thread
